@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id='calc-contain'>
+  
+        <form name="calculator">
+            <input type="text" name="bil1" placeholder="Angka 1" size="35"><br>
+            <input type="text" name="bil2" placeholder="Angka 2" size="35"><br>
+            
+            <input type="button" name="" value="+" onclick="penjumlahan()">
+            <input type="button" name="" value="-" onclick="pengurangan()">
+            <input type="button" name="" value="*" onclick="perkalian()">
+            <input type="button" name="" value="/" onclick="pembagian()">
+            <br>
+            <input type="text" name="hasil" placeholder="Hasil" size="35">
+            
+            </div>
+            <p id="nama">Saputra Kamandanu</p>
+            <script type="text/javascript">
+            function penjumlahan(){
+                var a = parseFloat(document.calculator.bil1.value)
+                var b = parseFloat(document.calculator.bil2.value)
+                var c = a+b
+                document.calculator.hasil.value=c
+
+            }
+            function pengurangan(){
+                var a = parseFloat(document.calculator.bil1.value)
+                var b = parseFloat(document.calculator.bil2.value)
+                var d = a-b
+                document.calculator.hasil.value=d
+
+            }
+            function perkalian(){
+                var a = parseFloat(document.calculator.bil1.value)
+                var b = parseFloat(document.calculator.bil2.value)
+                var e = a*b
+                document.calculator.hasil.value=e
+
+            }
+            function pembagian(){
+                var a = parseFloat(document.calculator.bil1.value)
+                var b = parseFloat(document.calculator.bil2.value)
+                var f = a/b
+                document.calculator.hasil.value=f
+
+            }
+            </script>
+        </form>
+    </div>
+    
+    
+    </body>
+</html>
